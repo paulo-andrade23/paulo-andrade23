@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+     float valor1, valor2, resultado;
+     char operador; 
+
+     printf("\nDigite o valor 1: ");
+     scanf("%f", &valor1);
+     printf("\nDigite o operador: ");
+     scanf(" %c", &operador);
+     printf("\nDigite o valor2: ");
+     scanf("%f", &valor2);
+        if(operador == '+' ){
+            resultado = valor1 + valor2;
+               printf("\n %f + %f = %f", valor1, valor2, resultado);
+       } else if(operador == '-') { 
+             resultado = valor1 - valor2;
+                printf("\n%f - %f = %f", valor1, valor2, resultado);
+       } else if(operador == ' / ') {
+             resultado =  valor1 / valor2;
+                 printf("\n%f / %f = %f", valor1, valor2, resultado);
+      } else {
+           printf("\nOperação inválida ");
+     }
+     return 0;
+     system("pause");
+}
